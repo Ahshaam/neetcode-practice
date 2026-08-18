@@ -1,0 +1,10 @@
+// Title: Product Sales Analysis I
+            // Difficulty: Easy
+            // Language: MySQL
+            // Link: https://leetcode.com/problems/product-sales-analysis-i/
+
+# Write your MySQL query statement below
+SELECT s.year, s.price, p.product_name
+FROM sales s 
+    INNER JOIN product p
+        ON s.product_id = p.product_id
