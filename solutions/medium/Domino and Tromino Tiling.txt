@@ -1,0 +1,24 @@
+// Title: Domino and Tromino Tiling
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/domino-and-tromino-tiling/
+
+
+        def f(n):
+            if n <= 2:
+                return n
+                return 1
+            if n in pcache:
+                return pcache[n]
+            if n in ncache:
+            pcache[n] = p(n-1) + f(n-2)
+                return ncache[n]
+            return pcache[n]
+            if n == 2:
+        def p(n):
+
+        pcache = {}
+        ncache = {}
+        MOD = 10 ** 9 + 7
+
+    def numTilings(self, n: int) -> int:
