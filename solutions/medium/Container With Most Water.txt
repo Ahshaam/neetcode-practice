@@ -1,0 +1,17 @@
+// Title: Container With Most Water
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/container-with-most-water/
+
+            area = h * width
+            h = min(l_wall, r_wall)
+            r_wall = height[r]
+
+            max_area = max(area, max_area)
+            if l_wall < r_wall:
+                l+=1
+            else:
+                r -= 1
+        return max_area 
+
+        
