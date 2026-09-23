@@ -1,0 +1,19 @@
+// Title: Valid Sudoku
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/valid-sudoku/
+
+                if board[i][j] in rows
+                [i] or board[i][j] in 
+                cols[j]:
+                    return False
+                
+                b = (i // 3) * 3 + (j // 
+                3)
+
+                if board[i][j] in boxes
+                [b]:
+                    return False
+                    
+                if board[i][j] == ".":
+                    continue
