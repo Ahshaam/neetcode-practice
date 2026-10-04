@@ -1,0 +1,22 @@
+// Title: Most Common Word
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/most-common-word/
+
+class Solution:
+    from collections import Counter
+    def mostCommonWord(self, paragraph: 
+    str, banned: list[str]) -> str:
+        count = Counter()
+        clean = ''.join(c if c.isalpha() 
+        else ' ' for c in paragraph).
+        lower()
+        words = clean.split()
+        banned = set(banned)
+        banned.add('')
+
+        for i in words:
+            if i not in banned:
+                count[i] += 1
+        
+        return count.most_common(1)[0][0]
