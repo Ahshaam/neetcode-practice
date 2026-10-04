@@ -1,0 +1,20 @@
+// Title: Unique Email Addresses
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/unique-email-addresses/
+
+            for i in email[0]:
+                if i != '.':
+                    s += i
+            if full_e not in em:
+                em.add(full_e)
+                if i == '+':
+                    break
+            full_e = s + '@' + email[1]
+        return len(em)
+            
+            s = ''
+
+                
+            email = e.split('@')
+        for e in emails:
