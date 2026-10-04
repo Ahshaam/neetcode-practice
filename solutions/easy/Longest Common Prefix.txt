@@ -1,0 +1,20 @@
+// Title: Longest Common Prefix
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/longest-common-prefix/
+
+class Solution:
+    def longestCommonPrefix(self, strs: 
+    list[str]) -> str:
+        minLen = 100000
+        for i in strs:
+            minLen = min(len(i), minLen)
+        res = ''
+        
+        for i in range(minLen):
+            ref = strs[0][i]
+            for word in strs:
+                if word[i] != ref:
+                    return res
+            res += ref
+        return res
