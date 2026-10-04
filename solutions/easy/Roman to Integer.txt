@@ -1,0 +1,21 @@
+// Title: Roman to Integer
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/roman-to-integer/
+
+            if i+1 < len(s):
+                if cur < numerals[s[i+1]]:
+                    res -= cur
+                else:
+                    res += cur
+            cur = numerals[s[i]]
+        for i in range(len(s)):
+
+        res = 0
+        'D': 500, 'M': 1000}
+        numerals = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 
+    def romanToInt(self, s: str) -> int:
+class Solution:
+            else:
+                res += cur
+        return res
