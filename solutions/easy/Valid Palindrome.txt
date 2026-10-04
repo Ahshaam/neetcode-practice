@@ -3,17 +3,20 @@
             // Language: Python3
             // Link: https://leetcode.com/problems/valid-palindrome/
 
-class Solution:
-    def isPalindrome(self, s: str) -> bool:
-        low = s.lower()
-        l = 0
-        r = len(clean) - 1
-        while l < r:
-            if clean[l] != clean[r]:
-                return False
-            l+=1
-            r-=1
-        clean = ''.join(c for c in low if c.isalnum())
         
-        print(clean)
+        l, r = 0, len(string) - 1
+
+        while l < r:
+            if string[l] != string[r]:
+                string += i
+            if i.isalnum():
+        for i in s:
+        string = ''
+    def isPalindrome(self, s: str) -> bool:
+class Solution:
+                return False
+            l += 1
+            r -= 1
+
+        string = string.lower()
         return True
