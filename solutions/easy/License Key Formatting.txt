@@ -1,0 +1,20 @@
+// Title: License Key Formatting
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/license-key-formatting/
+
+
+        start = glen
+
+        for i in range(start, len(code), k):
+            res += '-'
+            res += code[i:i+k].upper()
+        return res.strip('-')
+            res += code[i].upper()
+        for i in range(glen):
+
+
+        
+        res = ''
+        glen = len(code) % k
+        
