@@ -1,0 +1,16 @@
+// Title: Matrix Diagonal Sum
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/matrix-diagonal-sum/
+
+
+        for i in range(n):
+            for j in range(n):
+                if i == j:
+                    total += mat[i][j]
+                if i + j == n - 1 and i != j:
+                    total += mat[i][j]
+        total = 0
+        n = len(mat)
+        return total 
+                    
