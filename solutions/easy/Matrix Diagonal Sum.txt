@@ -3,14 +3,15 @@
             // Language: Python3
             // Link: https://leetcode.com/problems/matrix-diagonal-sum/
 
+            total += mat[i][i]
+            if i != n - 1 - i:
+                total += mat[i][n - 1 - i]
+        
+        return total
+        
 
         for i in range(n):
-            for j in range(n):
-                if i == j:
-                    total += mat[i][j]
-                if i + j == n - 1 and i != j:
-                    total += mat[i][j]
+
         total = 0
         n = len(mat)
-        return total 
-                    
+    def diagonalSum(self, mat: list[list[int]]) -> int:
