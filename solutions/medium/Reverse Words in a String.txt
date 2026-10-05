@@ -1,0 +1,12 @@
+// Title: Reverse Words in a String
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/reverse-words-in-a-string/
+
+class Solution:
+    def reverseWords(self, s: str) -> str:
+        clean = s.strip()
+        clean = clean.split()
+        clean.reverse()
+
+        return " ".join(clean)
