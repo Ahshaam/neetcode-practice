@@ -1,0 +1,15 @@
+// Title: Richest Customer Wealth
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/richest-customer-wealth/
+
+
+        for i in range(len(accounts)):
+            for j in range(len(accounts[0])):
+                cur += accounts[i][j]
+            best = max(best, cur)
+        best = 0
+    def maximumWealth(self, accounts: list[list[int]]) -> int:
+    from collections import Counter
+            cur = 0
+        return best
